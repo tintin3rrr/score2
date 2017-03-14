@@ -24,8 +24,8 @@ public class timer extends Actor
             timersec=60;
         }
         if(timer==0){
-            Greenfoot.stop();
+         Greenfoot.setWorld(new ScoreBoard());
         }
-        setImage(new GreenfootImage("Time left : " + timer, 30, Color.WHITE, Color.BLACK));
+        setImage(new GreenfootImage("Time left : " + timer, 30, Color.WHITE, null));
     }    
 }

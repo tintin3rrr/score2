@@ -30,6 +30,7 @@ int max_x = 805;
     else if(x > getX() || x < getX())
         setLocation(x, getY());
     Animate();
+    save();
     }    
     public void Animate(){
 if(getX()>=448&&getX()<=530)
@@ -46,7 +47,15 @@ if(getX()>=448&&getX()<=530)
     setImage("14.1.png");
     if(getX()>=140&&getX()<=264)
     setImage("15.1.png");
+    }
+    public void save(){
+    Actor ball = getOneIntersectingObject(ball.class);
+
+    if (ball != null) {
+        getWorld().removeObject(ball);
+  
     
-    
+     
+    }
 }
 }

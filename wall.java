@@ -14,6 +14,17 @@ public class wall extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        hit();
     }    
+    public void hit(){
+    Actor ball = getOneIntersectingObject(ball.class);
+
+    if (ball != null) {
+        getWorld().removeObject(ball);
+    life.life--;
+Greenfoot.playSound("hitwall.wav");
+     
+    }
+    
+    }
 }

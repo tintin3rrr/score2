@@ -18,12 +18,17 @@ public class Goal extends Actor
     }    
     public void goal(){
     Actor ball = getOneIntersectingObject(ball.class);
+
     if (ball != null) {
         getWorld().removeObject(ball);
+        score.score++;
+  
     
      
     }
         
         
     }
-}
+
+    }
+

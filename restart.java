@@ -14,7 +14,7 @@ public class restart extends Actor
      */
     public void act() 
     {if (Greenfoot.mouseClicked(this)){
-Greenfoot.setWorld(new scene());
+Greenfoot.setWorld(new scene(scene.n));
     }    
 }
 }
